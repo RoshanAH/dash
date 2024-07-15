@@ -7,22 +7,14 @@
 dash is nothing too complicated. It uses [tmux](https://github.com/tmux/tmux) to display a few of my most commonly used *top utilities all in one place. This project is really for me to get more comfortable with nix dev environments and managing flakes.
 
 ## Preview
-
-<p align="center">
-  <img
-    alt="build: passing"
-    src="./.github/screenshot.png"
-    width="800px"
-  >
-</p>
-
+  ![image](https://github.com/user-attachments/assets/ecd68afd-af2d-433a-95d9-8f6ec5f80451)
 
 ## Installation
 
 Install dash as you would a regular flake.
 
-`flake.nix`
 ```nix
+# flake.nix
 {
 
   inputs = {
@@ -41,9 +33,8 @@ Install dash as you would a regular flake.
   
 }
 ```
-`configuration.nix`
 ```nix
-
+# configuration.nix
 {inputs, pkgs, ...}: {
     # ...
     environment.systemPackages = (with pkgs; [
