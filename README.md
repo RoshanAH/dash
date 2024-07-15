@@ -1,5 +1,3 @@
-[![dependency status](https://deps.rs/repo/github/viperML/nh/status.svg)](https://deps.rs/repo/github/viperML/nh)
-
 <h1 align="center">dash</h1>
 
 ## What is it?
