@@ -27,9 +27,7 @@
 
               text = /*bash*/ ''
                 SESSION="${name}"
-                if tmux ls | grep -q dash; then
-                    tmux attach -t $SESSION
-                else
+                if ! tmux ls | grep -q dash ; then
                     tmux new-session -d -s $SESSION btm
                     tmux split-window -h -t $SESSION:0.0 peaclock
                     tmux split-window -v -t $SESSION:0.1 batmon
